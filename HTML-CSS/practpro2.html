@@ -1,0 +1,33 @@
+<!-- wap that demostarts that use of multile on single element.
+ when the user hover the div ,it should increas in size, change bgcolor,
+ rotate 360 deg,become circuler , all with smooth timing, delay and diff. tarnsition duration -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color:rgb(204, 130, 238);
+            transition-property: width,height,background-color,background-radius,transform;
+            transition-duration: 3s ,4s, 6s, 6s,5s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        div:hover{
+            width:200px;
+            height:200px;
+            background-color:rgb(206, 9, 9);
+            transform: rotate(360deg);
+            border-radius:50%;
+        }
+    </style>
+ </head>
+ <body>
+    <div></div>
+ </body>
+ </html>
