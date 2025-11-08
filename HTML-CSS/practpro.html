@@ -1,0 +1,35 @@
+<!-- creat fields:username,password,choices of sports like cricket, hockey,badminton.
+    inclde gender field, submit and reset button.
+    whike hovering username and password it'sbackground color dhould turn yellow and pink resectively.
+     while clicking sports and gender field , text should turn to red color.
+     both submit and reset button text should turn blue while hovering.
+     use apropriet selectors-->
+
+     <html>
+        <head>
+            <style>
+            input[type=text]:hover{ background-color:yellow}
+            input[type=password]:hover{ background-color:pink}
+            .btn:hover{color: blue;}
+            label:active{color: red;}
+            </style>
+        </head>
+            <body>
+                <form >
+                    <fieldset>
+                        <legend align="center">form</legend>
+                        username: <input type="text"><br>
+                        Password: <input type="password"><br>
+                        Sports: <label><input type="checkbox">Cricket</label><br>
+                                <label><input type="checkbox">badminton</label><br>
+                                <label><input type="checkbox">hokey</label><br>
+                                 <label><input type="checkbox">football</label><br>
+                        gender: <input type="radio" name="gen" >male
+                                <input type="radio" name="gen" >female
+                                <br>
+                                <input type="submit" class="btn">
+                                <input type="reset" class="btn">
+                    </fieldset>
+                </form>
+            </body>
+     </html>
