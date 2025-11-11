@@ -1,0 +1,14 @@
+  p::first-line{
+            color: green;
+            font-style: italic;
+        }
+ h1::selection,h2::selection{
+           background-color: grey;
+        }
+ol{
+    color: green;
+    font-style: 30px;
+}
+li:nth-child(3){
+    background-color: yellow;
+}
